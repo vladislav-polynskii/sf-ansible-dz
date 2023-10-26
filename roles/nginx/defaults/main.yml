@@ -1,0 +1,4 @@
+---
+http_conf: ansible-default
+http_host: _
+http_port: 80
