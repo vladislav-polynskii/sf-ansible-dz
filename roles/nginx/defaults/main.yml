@@ -2,3 +2,4 @@
 http_conf: ansible-default
 http_host: _
 http_port: 80
+document_root: /opt/nginx/ansible
