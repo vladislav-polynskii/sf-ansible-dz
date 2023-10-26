@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Install postfix
+      apt:
+        name: postfix
+        state: latest
+        update_cache: true
+      tags: init postfix 
+        
+    - name: Remove postfix
+      apt:
+        name: postfix
+        state: absent
+      tags: drop postfix 

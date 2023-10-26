@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Install mysql packages
+      apt:
+        pkg:
+          - mysql-server
+          - mysql-client
+        state: latest
+        update_cache: true
+        
+    - name: Make sure that mysql server was started and enabled
+      service:
+        name: mysql
+        state: started
+        enabled: yes
