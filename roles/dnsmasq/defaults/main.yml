@@ -1,2 +1,4 @@
 ---
-# defaults file for dnsmasq
+dnsmasq_listen_address: 127.0.0.1
+dnsmasq_port: 54
+dnsmasq_domain: example.com
